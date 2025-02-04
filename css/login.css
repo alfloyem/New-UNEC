@@ -16,7 +16,7 @@ body {
 }
 
 .left {
-    background: url('/images/login/login-background.jpg') center/cover no-repeat;
+    background: url('https://alfloyem.github.io/NewUnec/images/login/login-background.jpg') center/cover no-repeat;
     border-radius: clamp(0.25rem, 3.2vw, 2.25rem);
     height: 100%;
 }
