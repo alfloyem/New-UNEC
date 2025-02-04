@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --primary: #162D3A;
+    --secondary: #F7FBFF;
+    --background: #ffffff;
+    --text: #0C1421;
+    --text-secondary: #8897AD;
+    --contrast: #ffffff;
+    --border: 1px solid #D4D7E3;
+    --link: #1E4AE9;
+    --overlay: rgba(255, 255, 255, 0.6);
+
+}
+.dark {
+    --primary: #13893b;
+    --secondary: #272727;
+    --background: #0f0f0f;
+    --text: #f1f1f1;
+    --text-secondary: #aaa;
+    --contrast: #ffffff;
+    --border: 2px solid#303030;
+    --link: #3ea6ff;
+    --overlay: rgba(255, 255, 255, 0.6);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Dm Sans', sans-serif;
+    display: flex;
+    height: 100dvh;
+    line-height: 0;
+    color: var(--text);
+}
+.desktop {
+    width: 100%;
+    background-color: var(--background);
+    padding: min(2em, 3.125%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(0.5rem, 4.267vw, 2rem);
+    height: 100%;
+    overflow: hidden;
+}
+
+.left {
+    background: url('https://raw.githubusercontent.com/alfloyem/New-Unec/refs/heads/main/images/login/login-background.jpg') center/cover no-repeat;
+    border-radius: clamp(0.25rem, 3.2vw, 2.25rem);
+    height: 100%;
+}
+
+.side {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    max-width: 80%;
+    max-height: 80%;
+    z-index: 1;
+}
+
+img-dark,
+body.dark img-light {
+    display: none;
+}
+
+img-light,
+body.dark img-dark {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:var(--overlay);
+    border-radius: clamp(0.25rem, 3.2vw, 2.25rem);
+}
+
+.login-form {
+    min-width: 20vw;
+    width: 60%;
+    gap: clamp(0.1rem, 6.4vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 2.133vw, 1.75rem);
+}
+
+.intro h2 {
+    font-size: clamp(0.938rem, 2.667vw, 1.25rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.intro h4 {
+    font-size: clamp(1.5rem, 2.3vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 3.2vw, 1.5rem);
+}
+
+.login-form-sub {
+    gap: clamp(0.5rem, 6.4vw, 3rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-header {
+    font-size: clamp(0.875rem, 2vw, 0.9375rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.form-group input {
+    padding: clamp(0.75rem, 1.067vw, 1rem);
+    border: var(--border);
+    background-color: var(--secondary);
+    border-radius: 12px;
+    font-size: clamp(0.875rem, 2.133vw, 1rem);
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.password-recovery {
+    text-align: end;
+    font-size: clamp(0.875rem, 2.133vw, 1rem);
+    font-weight: 400;
+    color: var(--link);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.25rem, 3.2vw, 1.75rem);
+}
+
+.button {
+    width: 100%;
+    padding: clamp(0.75rem, 1.067vw, 1rem);
+    border: none;
+    border-radius: 12px;
+    font-weight: 400;
+    color: var(--contrast);
+    background: var(--primary);
+    cursor: pointer;
+    font-size: clamp(1rem, 2.667vw, 1.25rem);
+    line-height: initial;
+}
+
+.sign-up {
+    border: var(--border);
+    background: transparent;
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .desktop {
+    display: flex;
+    flex-direction: column;
+    }
+    .login-form {
+        gap: clamp(1.5rem, 2.4vw, 3rem);
+    }
+
+    .login-form-sub {
+        gap: clamp(1rem, 3vw, 3rem);
+    }
+    
+    .left {
+        max-height: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-form {
+    width: 100%;
+    }
+}
