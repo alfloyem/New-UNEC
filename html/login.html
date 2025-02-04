@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tələbənin şəxsi kabineti</title>
-    <link rel="stylesheet" href="https://alfloyem.github.io/NewUnec/css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/root.css">
 </head>
-<body>
+<body class="dark">
     <div class="desktop">
         <div class="side left">
-            <img class="dm-disabled" src="https://raw.githubusercontent.com/alfloyem/New-Unec/refs/heads/main/images/login/logo.png">
-            <img class="dm-active" src="https://raw.githubusercontent.com/alfloyem/New-Unec/refs/heads/main/images/login/logo-dark.png">
+            <img class="inactive" src="/images/login/logo.png">
+            <img class="active" src="/images/login/logo-dark.png">
             <div class="overlay"></div>
         </div>
         <div class="side right">
@@ -29,16 +30,16 @@
                             <div class="form-group-header">Şifrə</div>
                             <input placeholder="Ən az 8 simvol" name="LoginForm[password]" id="LoginForm_password" type="password" value="">
                         </div>
-                        <div class="password-recovery">Şifrəni unutmusunuz?</div>
+                        <a class="password-recovery" href="/az/rpassword" style="color: var(--link);text-decoration: none;">Şifrəni unutmusunuz?</a>
                     </div>
                     <div class="buttons">
                         <button class="button sign-in" type="submit" name="yt0" value="Daxil ol">Daxil Ol</button>
-                        <button class="button sign-up">Hesab Yarat</button>
+                        <button class="button sign-up"><a href="/az/registration" style="color: var(--text);text-decoration: none;">Hesab Yarat</a></button>
                     </div>
                 </form>
             </div>
         </div>
       </div>
-    <script src="https://raw.githubusercontent.com/alfloyem/NewUnec/main/js/login.js"></script>
+    <script src="/javascript/login.js"></script>
 </body>
 </html>

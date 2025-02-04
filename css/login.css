@@ -1,41 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-:root {
-    --primary: #162D3A;
-    --secondary: #F7FBFF;
-    --background: #ffffff;
-    --text: #0C1421;
-    --text-secondary: #8897AD;
-    --contrast: #ffffff;
-    --border: 1px solid #D4D7E3;
-    --link: #1E4AE9;
-    --overlay: rgba(255, 255, 255, 0.6);
-
-}
-.dark {
-    --primary: #13893b;
-    --secondary: #272727;
-    --background: #0f0f0f;
-    --text: #f1f1f1;
-    --text-secondary: #aaa;
-    --contrast: #ffffff;
-    --border: 2px solid#303030;
-    --link: #3ea6ff;
-    --overlay: rgba(255, 255, 255, 0.6);
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: 'Dm Sans', sans-serif;
     display: flex;
     height: 100dvh;
-    line-height: 0;
     color: var(--text);
 }
 .desktop {
@@ -46,11 +12,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: clamp(0.5rem, 4.267vw, 2rem);
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .left {
-    background: url('https://raw.githubusercontent.com/alfloyem/New-Unec/refs/heads/main/images/login/login-background.jpg') center/cover no-repeat;
+    background: url('/images/login/login-background.jpg') center/cover no-repeat;
     border-radius: clamp(0.25rem, 3.2vw, 2.25rem);
     height: 100%;
 }
@@ -69,13 +35,13 @@ body {
     z-index: 1;
 }
 
-img-dark,
-body.dark img-light {
+.active,
+body.dark .inactive {
     display: none;
-}
+}                   
 
-img-light,
-body.dark img-dark {
+.inactive,
+body.dark .active {
     display: block;
 }
 
@@ -191,10 +157,6 @@ body.dark img-dark {
 
     .login-form-sub {
         gap: clamp(1rem, 3vw, 3rem);
-    }
-    
-    .left {
-        max-height: 20px;
     }
 }
 
