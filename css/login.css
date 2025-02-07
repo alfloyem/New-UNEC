@@ -1,32 +1,46 @@
+/* Main Body Styles */
 body {
-    font-family: 'Dm Sans', sans-serif;
+    font-family: var(--fontfamily) !important;
+    font-size: var(--clamp-4);
     display: flex;
     height: 100dvh;
-    color: var(--text);
+    color: var(--text-primary);
 }
-.desktop {
+
+.container {
+    height: 100%;
     width: 100%;
-    background-color: var(--background);
-    padding: min(2em, 3.125%);
+    background: var(--background);
+    padding: clamp(var(--rem-2), var(--vw-7), var(--rem-9));
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(0.5rem, 4.267vw, 2rem);
-    height: 100%;
+    gap: var(--clamp-7);
     overflow: auto;
 }
 
-.left {
-    background: url('https://alfloyem.github.io/NewUnec/images/login/login-background.jpg') center/cover no-repeat;
-    border-radius: clamp(0.25rem, 3.2vw, 2.25rem);
-    height: 100%;
-}
-
 .side {
-    flex-grow: 1;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
+}
+
+
+/* Left Side */
+.left {
+    background: url('https://alfloyem.github.io/NewUnec/images/login/login-background.jpg') center/cover no-repeat;
+    border-radius: var(--clamp-6);
+    height: 100%;
+}
+
+.left::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay);
+    border-radius: var(--clamp-6);
 }
 
 .left img {
@@ -35,133 +49,136 @@ body {
     z-index: 1;
 }
 
-.active,
-body.dark .inactive {
+.logo-dark,
+body.dark .logo-light {
     display: none;
-}                   
+}
 
-.inactive,
-body.dark .active {
+.logo-light,
+body.dark .logo-dark {
     display: block;
 }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background:var(--overlay);
-    border-radius: clamp(0.25rem, 3.2vw, 2.25rem);
-}
 
-.login-form {
-    min-width: 20vw;
+/* Right Side */
+#login-form {
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    gap: clamp(0.1rem, 6.4vw, 3rem);
+    gap: var(--clamp-8);
+}
+
+.header {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    gap: var(--clamp-6);
 }
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(0.5rem, 2.133vw, 1.75rem);
+h4 {
+    font-weight: var(--bold);
 }
 
-.intro h2 {
-    font-size: clamp(0.938rem, 2.667vw, 1.25rem);
-    font-weight: 400;
-    line-height: 1;
-}
-
-.intro h4 {
-    font-size: clamp(1.5rem, 2.3vw, 2.5rem);
-    font-weight: 600;
-    line-height: 1;
+h5 {
+    font-weight: var(--regular);
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: clamp(0.75rem, 3.2vw, 1.5rem);
+    gap: var(--clamp-6);
 }
 
-.login-form-sub {
-    gap: clamp(0.5rem, 6.4vw, 3rem);
+.input-container {
     display: flex;
     flex-direction: column;
+    gap: var(--clamp-2);
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+label {
+    color: var(--text-primary);
 }
 
-.form-group-header {
-    font-size: clamp(0.875rem, 2vw, 0.9375rem);
-    font-weight: 400;
-    line-height: 1;
-}
-
-.form-group input {
-    padding: clamp(0.75rem, 1.067vw, 1rem);
+input {
+    padding: var(--clamp-4) var(--clamp-3);
     border: var(--border);
-    background-color: var(--secondary);
-    border-radius: 12px;
-    font-size: clamp(0.875rem, 2.133vw, 1rem);
-    font-weight: 400;
+    border-radius: var(--clamp-3);
+    background: var(--background-secondary);
     color: var(--text-secondary);
+    transition: border-color 0.3s ease;
+}
+
+input:hover {
+    border: var(--border-hover);
+}
+
+input::placeholder {
+    color: var(--text-disabled);
+    font-family: var(--fontfamily);
+}
+
+input:focus {
+    border: var(--border-focus);
+    color: var(--primary);
 }
 
 .password-recovery {
-    text-align: end;
-    font-size: clamp(0.875rem, 2.133vw, 1rem);
-    font-weight: 400;
-    color: var(--link);
+    text-align: right;
+    color: var(--primary);
+    text-decoration: none;
 }
 
-.buttons {
+.password-recovery:hover {
+    text-decoration: underline !important;
+}
+
+.button-container {
     display: flex;
     flex-direction: column;
-    gap: clamp(0.25rem, 3.2vw, 1.75rem);
+    gap: var(--clamp-6);
 }
 
-.button {
+button {
     width: 100%;
-    padding: clamp(0.75rem, 1.067vw, 1rem);
+    padding: var(--clamp-4);
+    border-radius: var(--clamp-3);
     border: none;
-    border-radius: 12px;
-    font-weight: 400;
-    color: var(--contrast);
-    background: var(--primary);
+    font-size: var(--clamp-5);
     cursor: pointer;
-    font-size: clamp(1rem, 2.667vw, 1.25rem);
-    line-height: initial;
+    font-family: var(--fontfamily);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sign-in {
+    background: var(--primary);
+    color: var(--text-contrast);
+}
+
+.sign-in:hover {
+    background: var(--hover);
 }
 
 .sign-up {
+    background: var(--background-secondary);
     border: var(--border);
-    background: transparent;
-    color: var(--text);
+    color: var(--primary);
 }
 
-@media (max-width: 768px) {
-    .desktop {
-    display: flex;
-    flex-direction: column;
-    }
-    .login-form {
-        gap: clamp(1.5rem, 2.4vw, 3rem);
-    }
-
-    .login-form-sub {
-        gap: clamp(1rem, 3vw, 3rem);
-    }
+.sign-up:hover {
+    background: var(--hover-secondary);
 }
 
 @media (max-width: 992px) {
-    .login-form {
-    width: 100%;
+    #login-form {
+        width: 100%;
     }
 }
+
+
+@media (max-width: 768px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vw-6);
+    }
+}
+

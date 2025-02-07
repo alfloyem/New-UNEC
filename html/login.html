@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="az">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tələbənin şəxsi kabineti</title>
-    <link rel="stylesheet" href="https://alfloyem.github.io/NewUnec/css/login.css">
-    <link rel="stylesheet" href="https://alfloyem.github.io/NewUnec/css/root.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/variables/root.css">
 </head>
+
 <body>
-    <div class="desktop">
+    <div class="container">
         <div class="side left">
-            <img class="inactive" src="https://alfloyem.github.io/NewUnec/images/login/logo.png">
-            <img class="active" src="https://alfloyem.github.io/NewUnec/images/login/logo-dark.png">
-            <div class="overlay"></div>
+            <img class="logo-light" src="https://alfloyem.github.io/NewUnec/images/login/logo.png">
+            <img class="logo-dark" src="https://alfloyem.github.io/NewUnec/images/login/logo-dark.png">
         </div>
         <div class="side right">
-            <div class="login-form">
-                <div class="intro">
+            <form id="login-form" action="/" method="post">
+                <div class="header">
                     <h4>Tələbənin şəxsi kabineti</h4>
-                    <h2>Kabinetdən istifadə etmək üçün daxil olun və ya qeydiyyatdan keçin!</h2>
+                    <h5>Kabinetdən istifadə etmək üçün daxil olun və ya qeydiyyatdan keçin!</h5>
                 </div>
-                <form id="login-form" class="login-form-sub" action="/" method="post">
-                    <div class="form">
-                        <div class="form-group">
-                            <div class="form-group-header">E-poçt</div>
-                            <input placeholder="rustem278@gmail.com" name="LoginForm[username]" id="LoginForm_username" type="text" data-temp-mail-org="0">
-                        </div>
-                        <div class="form-group">
-                            <div class="form-group-header">Şifrə</div>
-                            <input placeholder="Ən az 8 simvol" name="LoginForm[password]" id="LoginForm_password" type="password" value="">
-                        </div>
-                        <a class="password-recovery" href="/az/rpassword" style="color: var(--link);text-decoration: none;">Şifrəni unutmusunuz?</a>
+                <div class="form">
+                    <div class="input-container">
+                        <label>E-poçt və ya istifadəçi adı</label>
+                        <input placeholder="adsoyad@mail.com" type="email" name="LoginForm[username]" id="LoginForm_username"
+                            type="text" data-temp-mail-org="0">
                     </div>
-                    <div class="buttons">
-                        <button class="button sign-in" type="submit" name="yt0" value="Daxil ol">Daxil Ol</button>
-                        <button class="button sign-up"><a href="/az/registration" style="color: var(--text);text-decoration: none;">Hesab Yarat</a></button>
+                    <div class="input-container">
+                        <label>Şifrə</label>
+                        <input placeholder="••••••••" name="LoginForm[password]" id="LoginForm_password" type="password"
+                            value="">
                     </div>
-                </form>
-            </div>
+                    <a class="password-recovery" href="/az/rpassword" style="text-decoration: none;">Şifrəni
+                        unutmusunuz?</a>
+                </div>
+                <div class="button-container">
+                    <button class="sign-in" type="submit" name="yt0" value="Daxil ol">Daxil Ol</button>
+                    <button class="sign-up"><a href="/az/registration"
+                            style="color: var(--text);text-decoration: none;">Hesab Yarat</a></button>
+                </div>
+            </form>
         </div>
-      </div>
-    <script src="https://alfloyem.github.io/NewUnec/javascript/login.js"></script>
+    </div>
 </body>
+
 </html>

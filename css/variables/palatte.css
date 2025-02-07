@@ -1,0 +1,33 @@
+:root {
+    --primary: #2c415c;
+    --hover: #2c415cce;
+    --hover-secondary: #eaf4ff;
+    --text-primary: rgba(0, 0, 0, 0.9);
+    --text-secondary: rgba(0, 0, 0, 0.6);
+    --text-disabled: #8897AD;
+    --text-contrast: #ffffff;
+    --background: #ffffff;
+    --background-secondary: #F7FBFF;
+    --overlay: rgba(255, 255, 255, 0.5);
+    --border: 1px solid #2c415c3a;
+    --border-hover: 1px solid #2c415c81;
+    --border-focus: 1px solid #2c415c;
+    --link: #1E4AE9;
+}
+
+.dark {
+    --primary: #4A90E2;
+    --hover: #4A90E2ce;
+    --hover-secondary: #1c1c1c;
+    --text-primary: rgba(255, 255, 255, 0.9);
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-disabled: rgba(255, 255, 255, 0.4);
+    --text-contrast: #ffffff;
+    --background: #121212;
+    --background-secondary: #1d1d1d;
+    --overlay: rgba(0, 0, 0, 0.5);
+    --border: 1px solid #ffffff3a;
+    --border-hover: 1px solid #4A90E2cc;
+    --border-focus: 1px solid #4A90E2;
+    --link: #4A90E2;
+}
