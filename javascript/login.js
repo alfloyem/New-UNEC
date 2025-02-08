@@ -1,12 +1,17 @@
-document.querySelector('.show-password').addEventListener('click', function() {
+function attachPasswordToggle() {
+    const passwordToggleButton = document.querySelector('.show-password');
     const passwordInput = document.getElementById('LoginForm_password');
-    const icon = this;
 
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        icon.textContent = "visibility_off";
+    if (passwordToggleButton && passwordInput) {
+        passwordToggleButton.addEventListener('click', function () {
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                this.textContent = "visibility_off";
+            } else {
+                passwordInput.type = "password";
+                this.textContent = "visibility";
+            }
+        });
     } else {
-        passwordInput.type = "password";
-        icon.textContent = "visibility";
     }
-});
+}
