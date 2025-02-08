@@ -1,13 +1,14 @@
 # New UNEC  
 
-This project enhances the UNEC student panel by providing a **modern and user-friendly** interface. Using **Tampermonkey**, it replaces the existing web page's HTML, CSS, and JavaScript with a **new, improved** design.  
+This project enhances the UNEC student panel by providing a **modern and user-friendly** interface. Using the **NewUnec extension**, it replaces the existing web page's HTML, CSS, and JavaScript with a **new, improved** design.  
 
 ## 🚀 Features  
 
-✅ **Completely New Design:** Replaces the old student panel with a sleek, modern UI.  
-✅ **Dynamic Page Replacement:** For example, `site.com/login` automatically loads the **GitHub-hosted** `login.html`.  
+✅ **Completely New Design:** Replaces the old student panel with a sleek, modern UI. [See details](./Comparison.md)  
+✅ **Dynamic Page Replacement:** For example, `kabinet.unec.edu.az/az/login` automatically loads the **GitHub-hosted** `login.html`.  
 ✅ **Mobile-Friendly:** The website is fully **responsive** and optimized for mobile use.  
 ✅ **Auto Dark Mode:** The website automatically switches to **dark mode** based on system settings.  
+✅ **Automatic Language Switching:** The website automatically adjusts the **language** based on system settings.  
 ✅ **Open Source (GNU 3.0):** The entire project is licensed under the **GNU General Public License 3.0**.  
 
 ---
@@ -24,51 +25,54 @@ This project enhances the UNEC student panel by providing a **modern and user-fr
 - Safari  
 - Yandex Browser  
 - Tor Browser  
+- (And all browsers that support Chrome and Firefox add-on stores)  
 
 **📱 Mobile Browsers:**  
-- Kiwi Browser  
+- Firefox Browser  
 - Yandex Browser  
-- Via Browser  
-- The Browser  
+- (And all browsers that support Chrome and Firefox add-on stores)  
 
 ---
 
-## 🔧 Installation  
+## 🔧 Installation of NewUnec Extension  
 
-### 1️⃣ Install Tampermonkey  
+### 1️⃣ Install NewUnec Extension  
 
-First, install the **Tampermonkey** extension:  
-- **Chrome:** [Install Here](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)  
-- **Firefox:** [Install Here](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)  
-- **Edge:** [Install Here](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)  
-- **Opera:** [Install Here](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)  
-- **Other Browsers:** [Official Website](https://www.tampermonkey.net/)  
+First, install the **NewUnec extension**:  
+- **Chrome:** [Install Here](myextensionurl)  
+- **Firefox:** [Install Here](myextensionurl)  
+- **Other Browsers:** [Based on Chromium (download from the Chrome Web Store)](myextensionurl)  
 
-### 2️⃣ Add the Script to Tampermonkey  
+### 2️⃣ Grant the Necessary Permissions  
 
-1. Open **Tampermonkey**.  
-2. **Create a new script**.  
-3. Copy and paste **[this script](GITHUB_PROJECT_LINK)** from the repository.  
-4. **Save and enable** the script.  
+The extension requires the following permissions:  
+1. Run in private windows (optional)  
+2. Modify website content  
+3. Manage cookies  
+4. Manage tabs  
+5. Manage storage  
 
---- 
+### 3️⃣ You Are Done ✅  
+
+The extension will work automatically.  
+
+---  
 
 ## ⚡ Technologies Used  
 
-- **HTML, CSS, JavaScript**  
-- **Tampermonkey**  
+- **HTML, CSS, JavaScript, JSON**  
 - **GitHub Pages (For dynamic content loading)**  
 
----
+---  
 
 ## 📜 License  
 
 This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE](LICENSE) file for details.  
 
----
+---  
 
 ## 💡 Future Improvements  
 
-🔹 **Notification System:** Display announcements, Push notifications and Messages to users.
-🔹 **Custom Themes:** Allow users to select different color themes.
-🔹 **PWA Supoort :** Enable Progressive Web App functionality for a seamless mobile experience.
+🔹 **Notification System:** Display announcements, push notifications, and messages to users.  
+🔹 **Custom Themes:** Allow users to select different color themes.  
+🔹 **PWA Support:** Enable Progressive Web App functionality for a seamless mobile experience.  

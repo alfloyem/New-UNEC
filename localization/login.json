@@ -6,8 +6,7 @@
     "password-label": "Şifrə",
     "password-recovery": "Şifrəni unutmusunuz?",
     "sign_in": "Daxil Ol",
-    "sign_up": "Hesab Yarat",
-    "mail_placeholder": "1"
+    "sign_up": "Hesab Yarat"
   },
   "en": {
     "main-header": "Student's personal panel",
@@ -16,8 +15,7 @@
     "password-label": "Password",
     "password-recovery": "Forgot your password?",
     "sign_in": "Sign In",
-    "sign_up": "Sign Up",
-    "mail_placeholder": "2"
+    "sign_up": "Sign Up"
   },
   "ru": {
     "main-header": "Личный кабинет студента",
@@ -26,8 +24,7 @@
     "password-label": "Пароль",
     "password-recovery": "Забыли пароль?",
     "sign_in": "Войти",
-    "sign_up": "Создать аккаунт",
-    "mail_placeholder": "3"
+    "sign_up": "Создать аккаунт"
   },
   "tr": {
     "main-header": "Öğrenci Paneli",
@@ -36,7 +33,6 @@
     "password-label": "Şifre",
     "password-recovery": "Şifrenizi mi unuttunuz?",
     "sign_in": "Giriş Yap",
-    "sign_up": "Hesap Oluştur",
-    "mail_placeholder": "4"
+    "sign_up": "Hesap Oluştur"
   }
 }
