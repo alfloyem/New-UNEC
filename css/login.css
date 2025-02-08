@@ -131,7 +131,7 @@ input:focus {
     top: 0px;
     right: var(--clamp-3);
     height: 100%;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     font-size: var(--text-size-secondary);
