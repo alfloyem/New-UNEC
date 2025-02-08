@@ -10,13 +10,13 @@
     "mail_placeholder": "1"
   },
   "en": {
-    "main-header": "Student's personal cabinet",
-    "main-description": "Log in or register to use the cabinet!",
-    "mail-label": "mail-label",
-    "password-label": "password-label",
+    "main-header": "Student's personal panel",
+    "main-description": "Log in or register to use the Student panel!",
+    "mail-label": "E-mail",
+    "password-label": "Password",
     "password-recovery": "Forgot your password?",
     "sign_in": "Sign In",
-    "sign_up": "Create Account",
+    "sign_up": "Sign Up",
     "mail_placeholder": "2"
   },
   "ru": {
