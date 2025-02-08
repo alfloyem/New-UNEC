@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="az">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tələbənin şəxsi kabineti</title>
     <link rel="stylesheet" href="https://alfloyem.github.io/NewUnec/css/login.css">
     <link rel="stylesheet" href="https://alfloyem.github.io/NewUnec/css/variables/root.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/variables/root.css"> -->
 </head>
-
-<body>
+<body class="dark">
     <div class="container">
         <div class="side left">
             <img class="logo-light" src="https://alfloyem.github.io/NewUnec/images/login/logo.png">
@@ -24,25 +25,26 @@
                 <div class="form">
                     <div class="input-container">
                         <label>E-poçt və ya istifadəçi adı</label>
-                        <input placeholder="adsoyad@mail.com" type="email" name="LoginForm[username]" id="LoginForm_username"
-                            type="text" data-temp-mail-org="0">
+                        <input placeholder="adsoyad@mail.com" type="email" name="LoginForm[username]" id="LoginForm_username" type="text" data-temp-mail-org="0">
                     </div>
                     <div class="input-container">
                         <label>Şifrə</label>
-                        <input placeholder="••••••••" name="LoginForm[password]" id="LoginForm_password" type="password"
-                            value="">
+                        <div class="password-input">
+                            <input placeholder="••••••••" name="LoginForm[password]" id="LoginForm_password" type="password" value="">
+                            <i class="material-icons show-password">visibility</i>
+                        </div>
                     </div>
-                    <a class="password-recovery" href="/az/rpassword" style="text-decoration: none;">Şifrəni
-                        unutmusunuz?</a>
+                    <a class="password-recovery" href="/az/rpassword" style="text-decoration: none;">Şifrəni unutmusunuz?</a>
                 </div>
                 <div class="button-container">
                     <button class="sign-in" type="submit" name="yt0" value="Daxil ol">Daxil Ol</button>
-                    <button class="sign-up"><a href="/az/registration"
-                            style="color: var(--text);text-decoration: none;">Hesab Yarat</a></button>
+                    <button class="sign-up"><a href="/az/registration" style="color: var(--text);text-decoration: none;">Hesab Yarat</a></button>
                 </div>
             </form>
         </div>
     </div>
+    <script src="https://alfloyem.github.io/NewUnec/javascript/login.js"></script>
+    <!-- <script src="../javascript/login.js"></script> -->
 </body>
 
 </html>

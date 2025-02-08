@@ -99,6 +99,7 @@ label {
 }
 
 input {
+    width: 100%;
     padding: var(--clamp-4) var(--clamp-3);
     border: var(--border);
     border-radius: var(--clamp-3);
@@ -118,6 +119,27 @@ input::placeholder {
 
 input:focus {
     border: var(--border-focus);
+    color: var(--primary);
+}
+
+.password-input {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    top: 0px;
+    right: var(--clamp-3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--text-size-secondary);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     color: var(--primary);
 }
 
