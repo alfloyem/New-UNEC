@@ -1,46 +1,42 @@
 {
   "az": {
-    "header": "Tələbənin şəxsi kabineti",
-    "sub-header": "Kabinetdən istifadə etmək üçün daxil olun və ya qeydiyyatdan keçin!",
-    "email": "E-poçt",
-    "password": "Şifrə",
-    "forgot_password": "Şifrəni unutmusunuz?",
+    "main-header": "Tələbənin şəxsi kabineti",
+    "main-description": "Kabinetdən istifadə etmək üçün daxil olun və ya qeydiyyatdan keçin!",
+    "mail-label": "E-poçt",
+    "password-label": "Şifrə",
+    "password-recovery": "Şifrəni unutmusunuz?",
     "sign_in": "Daxil Ol",
     "sign_up": "Hesab Yarat",
-    "email_placeholder": "yourname@example.com",
-    "password_placeholder": "Ən az 8 simvol"
+    "mail_placeholder": "1"
   },
   "en": {
-    "header": "Student's personal cabinet",
-    "sub-header": "Log in or register to use the cabinet!",
-    "email": "Email",
-    "password": "Password",
-    "forgot_password": "Forgot your password?",
+    "main-header": "Student's personal cabinet",
+    "main-description": "Log in or register to use the cabinet!",
+    "mail-label": "mail-label",
+    "password-label": "password-label",
+    "password-recovery": "Forgot your password?",
     "sign_in": "Sign In",
     "sign_up": "Create Account",
-    "email_placeholder": "yourname@example.com",
-    "password_placeholder": "At least 8 characters"
+    "mail_placeholder": "2"
   },
   "ru": {
-    "header": "Личный кабинет студента",
-    "sub-header": "Войдите или зарегистрируйтесь, чтобы использовать кабинет!",
-    "email": "Эл. почта",
-    "password": "Пароль",
-    "forgot_password": "Забыли пароль?",
+    "main-header": "Личный кабинет студента",
+    "main-description": "Войдите или зарегистрируйтесь, чтобы использовать кабинет!",
+    "mail-label": "Эл. почта",
+    "password-label": "Пароль",
+    "password-recovery": "Забыли пароль?",
     "sign_in": "Войти",
     "sign_up": "Создать аккаунт",
-    "email_placeholder": "yourname@example.com",
-    "password_placeholder": "Не менее 8 символов"
+    "mail_placeholder": "3"
   },
   "tr": {
-    "header": "Öğrenci Paneli",
-    "sub-header": "Paneli kullanmak için giriş yapın veya kaydolun!",
-    "email": "E-posta",
-    "password": "Şifre",
-    "forgot_password": "Şifrenizi mi unuttunuz?",
+    "main-header": "Öğrenci Paneli",
+    "main-description": "Paneli kullanmak için giriş yapın veya kaydolun!",
+    "mail-label": "E-posta",
+    "password-label": "Şifre",
+    "password-recovery": "Şifrenizi mi unuttunuz?",
     "sign_in": "Giriş Yap",
     "sign_up": "Hesap Oluştur",
-    "email_placeholder": "yourname@example.com",
-    "password_placeholder": "En az 8 karakter"
+    "mail_placeholder": "4"
   }
 }

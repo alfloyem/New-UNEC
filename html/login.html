@@ -19,31 +19,30 @@
         <div class="side right">
             <form id="login-form" action="/" method="post">
                 <div class="header">
-                    <h4>Tələbənin şəxsi kabineti</h4>
-                    <h5>Kabinetdən istifadə etmək üçün daxil olun və ya qeydiyyatdan keçin!</h5>
+                    <h4 id="main-header" >Tələbənin şəxsi kabineti</h4>
+                    <h5 id="main-description">Kabinetdən istifadə etmək üçün daxil olun və ya qeydiyyatdan keçin!</h5>
                 </div>
                 <div class="form">
                     <div class="input-container">
-                        <label>E-poçt və ya istifadəçi adı</label>
-                        <input placeholder="adsoyad@mail.com" type="" name="LoginForm[username]" id="LoginForm_username" type="text" data-temp-mail-org="0">
+                        <label id="mail-label" >E-poçt və ya istifadəçi adı</label>
+                        <input id="LoginForm_username" placeholder="adsoyad@mail.com" type="" name="LoginForm[username]" type="text" data-temp-mail-org="0">
                     </div>
                     <div class="input-container">
-                        <label>Şifrə</label>
+                        <label id="password-label" >Şifrə</label>
                         <div class="password-input">
-                            <input placeholder="••••••••" name="LoginForm[password]" id="LoginForm_password" type="password" value="">
+                            <input id="LoginForm_password" placeholder="••••••••" name="LoginForm[password]" type="password" value="">
                             <i class="material-icons show-password">visibility</i>
                         </div>
                     </div>
-                    <a class="password-recovery" href="/az/rpassword" style="text-decoration: none;">Şifrəni unutmusunuz?</a>
+                    <a id="password-recovery" class="password-recovery" href="/az/rpassword" style="text-decoration: none;">Şifrəni unutmusunuz?</a>
                 </div>
                 <div class="button-container">
-                    <button class="sign-in" type="submit" name="yt0" value="Daxil ol">Daxil Ol</button>
-                    <button class="sign-up"><a href="/az/registration" style="color: var(--text);text-decoration: none;">Hesab Yarat</a></button>
+                    <button id="sign-in" class="sign-in" type="submit" name="yt0" value="Daxil ol">Daxil Ol</button>
+                    <button id="sign-up" class="sign-up"><a href="/az/registration" style="color: var(--text);text-decoration: none;">Hesab Yarat</a></button>
                 </div>
             </form>
         </div>
     </div>
-    <script src="https://alfloyem.github.io/NewUnec/javascript/login.js"></script>
 </body>
 
 </html>
