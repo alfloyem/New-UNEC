@@ -11,7 +11,7 @@ body {
     height: 100%;
     width: 100%;
     background: var(--background);
-    padding: clamp(var(--rem-4), var(--vw-7), var(--rem-9));
+    padding: clamp(var(--rem-6), var(--vw-7), var(--rem-9));
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--clamp-7);
