@@ -1,19 +1,19 @@
-# New UNEC  
+# New UNEC
 
-This project enhances the UNEC student panel by providing a **modern and user-friendly** interface. Using the **New UNEC extension**, it replaces the existing web page's HTML, CSS, and JavaScript with a **new, improved** design.  
+The **New UNEC** modernizes the UNEC student portal by providing a **clean, user-friendly interface** with various enhancements using the [**New UNEC Extension**](https://github.com/alfloyem/New-UNEC-Extension). This extension improves both functionality and the user experience by replacing the existing `HTML`, `CSS`, and `JavaScript` with a more efficient and visually attractive design.
 
-## 🚀 Features  
+## 🚀 Key Features
 
-✅ **Completely New Design:** Replaces the old student panel with a sleek, modern UI. [See details](./Comparison.md)  
-✅ **Dynamic Page Replacement:** For example, `kabinet.unec.edu.az/az/login` automatically loads the **GitHub-hosted** `login.html`.  
-✅ **Mobile-Friendly:** The website is fully **responsive** and optimized for mobile use.  
-✅ **Auto Dark Mode:** The website automatically switches to **dark mode** based on system settings.  
-✅ **Automatic Language Switchbing:** The website automatically adjusts the **language** based on system settings.  
-✅ **Open Source (GNU 3.0):** The entire project is licensed under the **GNU General Public License 3.0**.  
+✅ **Modern, Sleek Design:** Replaces the outdated student panel with a contemporary and user-friendly interface. [View Comparison](./Comparison.md).  
+✅ **Dynamic Page Loading:** Automatically loads GitHub-hosted pages (e.g., `login.html`) on specific URLs like `kabinet.unec.edu.az/az/login`.  
+✅ **Fully Responsive Design:** Optimized for mobile and desktop devices, ensuring a seamless browsing experience across all platforms.  
+✅ **Auto Dark Mode:** Detects system preferences and switches the interface to dark mode automatically.  
+✅ **Automatic Language Detection:** Adjusts the website language based on the user's system language settings.  
+✅ **Open Source (GNU 3.0 License):** The entire project is licensed under the **GNU General Public License v3.0**.
 
 ---
 
-## 🖥 Supported Browsers  
+## 🖥 Supported Browsers
 
 **💻 Desktop Browsers:**  
 - Google Chrome  
@@ -25,54 +25,63 @@ This project enhances the UNEC student panel by providing a **modern and user-fr
 - Safari  
 - Yandex Browser  
 - Tor Browser  
-- (And all browsers that support Chrome and Firefox add-on stores)  
+- (And all browsers supporting Chrome and Firefox extension stores)
 
 **📱 Mobile Browsers:**  
-- Firefox Browser  
+- Firefox  
 - Yandex Browser  
-- (And all browsers that support Chrome and Firefox add-on stores)  
+- (And all browsers supporting Chrome and Firefox extension stores)
 
 ---
 
-## 🔧 Installation of New UNEC Extension  
+## 🔧 Installation Guide
 
-### 1️⃣ Install New UNEC Extension  
+### 1️⃣ Install New UNEC Extension
 
-First, install the **New UNEC extension**:  
-- **Chrome:** [Install Here](myextensionurl)  
-- **Firefox:** [Install Here](myextensionurl)  
-- **Other Browsers:** [Based on Chromium (download from the Chrome Web Store)](myextensionurl)  
+To begin, install the **New UNEC extension**:
 
-### 2️⃣ Grant the Necessary Permissions  
+   - **Firefox:** Currently unavailable  
+   - **Chrome:** Currently unavailable  
+   - **Other Browsers:** Currently unavailable
 
-The extension requires the following permissions:  
-1. Run in private windows (optional)  
-2. Modify website content  
-3. Manage cookies  
-4. Manage tabs  
-5. Manage storage  
+### 2️⃣ Grant Necessary Permissions
 
-### 3️⃣ You Are Done ✅  
+The extension requires the following permissions:
+1. Run in private windows (optional)
+2. Modify website content
+3. Manage cookies
+4. Manage tabs
+5. Manage storage
 
-The extension will work automatically.  
+### 3️⃣ Installation Complete! 🎉
 
----  
+The extension will activate automatically upon installation.
 
-## ⚡ Technologies Used  
+---
+
+## ⚡ Technologies Used
 
 - **HTML, CSS, JavaScript, JSON**  
-- **GitHub Pages (For dynamic content loading)**  
+- **GitHub Pages** (for dynamic content loading)
 
----  
+---
 
-## 📜 License  
+## 📜 License
 
-This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE](LICENSE) file for details.  
+This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE](LICENSE) file for full details.
 
----  
+---
 
-## 💡 Future Improvements  
+## 💡 Future Enhancements
 
 🔹 **Notification System:** Display announcements, push notifications, and messages to users.  
-🔹 **Custom Themes:** Allow users to select different color themes.  
-🔹 **PWA Support:** Enable Progressive Web App functionality for a seamless mobile experience.  
+🔹 **Custom Themes:** Enable users to select from a variety of color themes.  
+🔹 **PWA Support:** Add Progressive Web App functionality for an improved mobile experience.
+
+## 🤝 Contribution
+
+We welcome and encourage contributions! If you'd like to contribute, feel free to submit pull requests or open issues via the GitHub repository.
+
+## 🛠 Support
+
+For any inquiries, issues, or feedback, please reach out through the GitHub repository or contact us at [alfloyem@gmail.com](mailto:alfloyem@gmail.com).
