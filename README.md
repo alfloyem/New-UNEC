@@ -1,6 +1,6 @@
 # New UNEC  
 
-This project enhances the UNEC student panel by providing a **modern and user-friendly** interface. Using the **NewUnec extension**, it replaces the existing web page's HTML, CSS, and JavaScript with a **new, improved** design.  
+This project enhances the UNEC student panel by providing a **modern and user-friendly** interface. Using the **New UNEC extension**, it replaces the existing web page's HTML, CSS, and JavaScript with a **new, improved** design.  
 
 ## 🚀 Features  
 
@@ -8,7 +8,7 @@ This project enhances the UNEC student panel by providing a **modern and user-fr
 ✅ **Dynamic Page Replacement:** For example, `kabinet.unec.edu.az/az/login` automatically loads the **GitHub-hosted** `login.html`.  
 ✅ **Mobile-Friendly:** The website is fully **responsive** and optimized for mobile use.  
 ✅ **Auto Dark Mode:** The website automatically switches to **dark mode** based on system settings.  
-✅ **Automatic Language Switching:** The website automatically adjusts the **language** based on system settings.  
+✅ **Automatic Language Switchbing:** The website automatically adjusts the **language** based on system settings.  
 ✅ **Open Source (GNU 3.0):** The entire project is licensed under the **GNU General Public License 3.0**.  
 
 ---
@@ -34,11 +34,11 @@ This project enhances the UNEC student panel by providing a **modern and user-fr
 
 ---
 
-## 🔧 Installation of NewUnec Extension  
+## 🔧 Installation of New UNEC Extension  
 
-### 1️⃣ Install NewUnec Extension  
+### 1️⃣ Install New UNEC Extension  
 
-First, install the **NewUnec extension**:  
+First, install the **New UNEC extension**:  
 - **Chrome:** [Install Here](myextensionurl)  
 - **Firefox:** [Install Here](myextensionurl)  
 - **Other Browsers:** [Based on Chromium (download from the Chrome Web Store)](myextensionurl)  

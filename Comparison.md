@@ -32,7 +32,7 @@ Each section includes **before & after images** and a list of changes.
 #### 🔄 Modified:
 - Whole Html Structure
 - Font-Family (Inter)
-- Header, Input, Placeholder, Button, Link, UI
+- UI of Header, Input, Placeholder, Button, Link and Spacing
 
 ---
 
@@ -42,4 +42,4 @@ Each section includes **before & after images** and a list of changes.
 ## Summary & Closing Remarks
 
 This document serves as a **detailed comparison** between Decrepit and new versions of the UNEC cabinet site.  
-For more details about **soruce code**
+For more details about [**soruce code**](https://github.com/alfloyem/New-UNEC)

@@ -29,7 +29,7 @@ body {
 
 /* Left Side */
 .left {
-    background: url('https://alfloyem.github.io/NewUnec/images/login/login-background.jpg') center/cover no-repeat;
+    background: url('https://alfloyem.github.io/New-UNEC/images/login/login-background.jpg') center/cover no-repeat;
     border-radius: var(--clamp-6);
     height: 100%;
 }
