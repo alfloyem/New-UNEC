@@ -32,6 +32,7 @@
     --color-state-hover:         #2c415cd7;
     --color-state-active:        #CBD5E11A;
     --color-state-focus:         #bfdbfec0;  /* Blue focus */
+    --color-state-disabled:      #1E293B61;
     --color-overlay:             #dae8fd80;
     --color-overlay-viewer:      #1E293BE6;
     --color-toolbar-background:  #1E293B4D;
@@ -80,6 +81,7 @@
         --color-state-hover:         #4A90E2D7;  /* 84% opacity primary color */
         --color-state-active:        #4A90E21A;  /* 10% opacity primary color */
         --color-state-focus:         #4A90E280;  /* 50% opacity primary color */
+        --color-state-disabled:      #F0F0F061;
         --color-overlay:             #00000080;  /* Semi-transparent black overlay */
         --color-overlay-viewer:      #121212E6;
         --color-toolbar-background:  #1212124D;
