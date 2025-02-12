@@ -1,33 +1,93 @@
 :root {
-    --primary: #2c415c;
-    --hover: #2c415cce;
-    --hover-secondary: #eaf4ff;
-    --text-primary: rgba(0, 0, 0, 0.9);
-    --text-secondary: rgba(0, 0, 0, 0.6);
-    --text-disabled: #8897AD;
-    --text-contrast: #ffffff;
-    --background: #ffffff;
-    --background-secondary: #F7FBFF;
-    --overlay: rgba(255, 255, 255, 0.5);
-    --border: 1px solid #2c415c3a;
-    --border-hover: 1px solid #2c415c81;
-    --border-focus: 1px solid #2c415c;
-    --link: #1E4AE9;
+    /* Main Colors */
+    --color-primary:             #2c415c;  /* Modern blue (blue-600) */
+    --color-secondary:           #60A5FA;  /* Light blue (blue-400) */
+    --color-error:               #EF4444;  /* Soft red (red-500) */
+    --color-success:             #10B981;  /* Natural green (emerald-500) */
+    --color-warning:             #F59E0B;  /* Golden yellow (amber-500) */
+    --color-warning-light:       #FACC15;  /* Softer yellow (amber-400) */
+
+    /* Text Colors */
+    --color-text-primary:        #1E293B;  /* Soft black (slate-800) */
+    --color-text-secondary:      #64748B;  /* Gray-blue (slate-600) */
+    --color-link:                #2563EB;  /* Vivid blue (blue-600) */
+    --color-link-visited:        #4338CA;  /* Deep purple (indigo-700) */
+    --color-text-contrast:       #FFFFFF;
+    
+    /* Icon Colors */
+    --color-icon-primary:        #2c415c;  /* Matches primary color */
+    --color-icon-secondary:      #94A3B8;  /* Soft gray-blue (slate-400) */
+    --color-icon-contrast:       #FFFFFF;
+    
+    /* Backgrounds */
+    --color-background:            #FFFFFF;
+    --color-background-secondary:          #F1F5F9; /* Light gray-blue (slate-100) */
+    --color-background-secondary-hover:    #E2E8F0; /* (slate-200) */
+    --color-background-secondary-active:   #CBD5E1; /* (slate-300) */
+    --color-background-contrast:           #1E293B; /* Slate-800 */
+    --color-background-thumbnail:          #1D4ED8; /* Dark blue (blue-700) */
+    --color-background-warning:            #FEF9C3; /* Yellow background (amber-100) */
+    
+    /* State Colors */
+    --color-state-hover:         #2c415cd7;
+    --color-state-active:        #CBD5E11A;
+    --color-state-focus:         #bfdbfec0;  /* Blue focus */
+    --color-overlay:             #dae8fd80;
+    --color-overlay-viewer:      #1E293BE6;
+    --color-toolbar-background:  #1E293B4D;
+    
+    /* Borders and Dividers */
+    --color-border-default:      #E2E8F0;  /* (slate-200) */
+    --color-border-hover:        #CBD5E1;  /* (slate-300) */
+    --color-border-active:       #94A3B8;  /* (slate-400) */
+    --color-divider:             #E2E8F0;
 }
 
-.dark {
-    --primary: #4A90E2;
-    --hover: #4A90E2ce;
-    --hover-secondary: #1c1c1c;
-    --text-primary: rgba(255, 255, 255, 0.9);
-    --text-secondary: rgba(255, 255, 255, 0.6);
-    --text-disabled: rgba(255, 255, 255, 0.4);
-    --text-contrast: #ffffff;
-    --background: #121212;
-    --background-secondary: #1d1d1d;
-    --overlay: rgba(0, 0, 0, 0.5);
-    --border: 1px solid #ffffff3a;
-    --border-hover: 1px solid #4A90E2cc;
-    --border-focus: 1px solid #4A90E2;
-    --link: #67b4f3;
+
+@media (prefers-color-scheme: dark) {
+    /* Dark Mode Colors */
+    :root {
+        /* Main Colors */
+        --color-primary:             #4A90E2;  /* Primary color */
+        --color-secondary:           #60A5FA;  /* Optional secondary color */
+        --color-error:               #EF4444;  
+        --color-success:             #10B981;  
+        --color-warning:             #F59E0B;  
+        --color-warning-light:       #FACC15;  
+    
+        /* Text Colors */
+        --color-text-primary:        #F0F0F0;  /* Light text for readability */
+        --color-text-secondary:      #A0A0A0;
+        --color-link:                #4A90E2;  /* Links matching the primary color */
+        --color-link-visited:        #3A78C2;  /* Slightly darker shade for visited links */
+        --color-text-contrast:       #ffffff;  /* Light text for dark backgrounds */
+    
+        /* Icon Colors */
+        --color-icon-primary:        #4A90E2;
+        --color-icon-secondary:      #B0B0B0;
+        --color-icon-contrast:       #1E293B;
+    
+        /* Backgrounds */
+        --color-background:                  #121212;  /* Main dark background */
+        --color-background-secondary:        #1E1E1E;  /* Secondary surfaces (cards, panels) */
+        --color-background-secondary-hover:  #2A2A2A;
+        --color-background-secondary-active: #333333;
+        --color-background-contrast:         #E0E0E0;  /* Light contrast background */
+        --color-background-thumbnail:        #357ABD;  /* Slightly darker version of primary color */
+        --color-background-warning:          #665C1E;  /* Dark tone for warning areas */
+    
+        /* State Colors */
+        --color-state-hover:         #4A90E2D7;  /* 84% opacity primary color */
+        --color-state-active:        #4A90E21A;  /* 10% opacity primary color */
+        --color-state-focus:         #4A90E280;  /* 50% opacity primary color */
+        --color-overlay:             #00000080;  /* Semi-transparent black overlay */
+        --color-overlay-viewer:      #121212E6;
+        --color-toolbar-background:  #1212124D;
+    
+        /* Borders and Dividers */
+        --color-border-default:      #333333;
+        --color-border-hover:        #444444;
+        --color-border-active:       #555555;
+        --color-divider:             #444444;
+    }
 }
