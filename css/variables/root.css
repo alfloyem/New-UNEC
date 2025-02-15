@@ -20,3 +20,9 @@
 :visited {
     color: inherit;
 }
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
