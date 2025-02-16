@@ -32,7 +32,9 @@
       "sidebar-header-educational-resources": "Tədris resursları",
       "sidebar-header-services": "Xidmətlər",
       "sidebar-header-student-help": "Tələbə dəstəyi",
-      "sidebar-header-finance-and-programs": "Maliyyə və proqramlar"
+      "sidebar-header-finance-and-programs": "Maliyyə və proqramlar",
+      "exit-account": "Hesabdan çıx",
+      "invariant-footer-text": "Bu veb saytı emal etdi və yenidən qurdu:"
     },
     "en": {
       "sidebar-academic-calendar": "Academic calendar",
@@ -67,7 +69,9 @@
       "sidebar-header-educational-resources": "Educational resources",
       "sidebar-header-services": "Services",
       "sidebar-header-student-help": "Student support",
-      "sidebar-header-finance-and-programs": "Finance and programs"
+      "sidebar-header-finance-and-programs": "Finance and programs",
+      "exit-account": "Exit account",
+      "invariant-footer-text": "This site has been manipulated and reconstructed by"
     },
     "ru": {
       "sidebar-academic-calendar": "Академический календарь",
@@ -102,7 +106,9 @@
       "sidebar-header-educational-resources": "Учебные ресурсы",
       "sidebar-header-services": "Услуги",
       "sidebar-header-student-help": "Поддержка студентов",
-      "sidebar-header-finance-and-programs": "Финансы и программы"
+      "sidebar-header-finance-and-programs": "Финансы и программы",
+      "exit-account": "Выйти из учетной записи",
+      "invariant-footer-text": "Обработал и переустановил этот сайт:"
     },
     "tr": {
       "sidebar-academic-calendar": "Akademik takvim",
@@ -137,6 +143,8 @@
       "sidebar-header-educational-resources": "Eğitim kaynakları",
       "sidebar-header-services": "Hizmetler",
       "sidebar-header-student-help": "Öğrenci desteği",
-      "sidebar-header-finance-and-programs": "Finans ve programlar"
+      "sidebar-header-finance-and-programs": "Finans ve programlar",
+      "exit-account": "Hesaptan çık",
+      "invariant-footer-text": "Bu site manipüle edildi ve yeniden inşa edildi:"
     }
 } 

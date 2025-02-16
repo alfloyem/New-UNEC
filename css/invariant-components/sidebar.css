@@ -57,7 +57,7 @@ aside{
 
 
     /* Sidebar Open - Main */
-    #exit-account,
+    #exit-account-button,
     .category-dropdown-button {
       display: flex;
       align-items: center;
@@ -76,12 +76,12 @@ aside{
       align-items: center;
     }
 
-    #exit-account:hover,
+    #exit-account-button:hover,
     .category-dropdown-button:hover {
       background: var(--color-background-hover);
     }
 
-    #exit-account:focus-visible,
+    #exit-account-button:focus-visible,
     .category-dropdown-button:focus-visible {
       box-shadow: inset 0 0 0 5px var(--color-state-focus);
     }
@@ -94,7 +94,7 @@ aside{
       font-weight: var(--medium);
     }
 
-    #exit-account span,
+    #exit-account-button span,
     .category-dropdown-button span {
       text-align: left;
       flex-grow: 1;
@@ -208,11 +208,11 @@ aside{
     }
 
     /* Sidebar Open - Footer*/
-    #exit-account svg {
+    #exit-account-button svg {
       fill: var(--color-error);
     }
 
-    #exit-account {
+    #exit-account-button {
       overflow: hidden;
       color: var(--color-error);
     }
@@ -221,7 +221,7 @@ aside{
 #sidebar.close{
   width: 92px;
 
-  #exit-account span,
+  #exit-account-button span,
   .category-dropdown-button span,
   .category-dropdown-button .toggle-sub-menu {
     display: none;
