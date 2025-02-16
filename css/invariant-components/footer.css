@@ -1,0 +1,25 @@
+footer{
+    grid-area: footer;
+    color: var(--color-text-secondary);
+    padding: var(--rem-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+    font-size: var(--rem-3);
+    font-weight: var(--light);
+    gap: var(--rem-1);
+    border-top: 1px solid var(--color-border-default);
+}
+
+
+footer abbr,
+footer abbr a {
+    display: inline-block;
+    height: 15px;
+}
+
+footer abbr a svg {
+    height: 100%;
+    fill: var(--color-text-primary);
+}
