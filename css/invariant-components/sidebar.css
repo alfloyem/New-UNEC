@@ -76,6 +76,7 @@ aside{
       align-items: center;
       overflow: hidden;
       text-overflow: ellipsis;
+      
     }
 
     #exit-account-button:hover,
