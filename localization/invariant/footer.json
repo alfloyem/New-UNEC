@@ -1,0 +1,14 @@
+{
+    "az": {
+        "invariant-footer-text": "Bu veb saytı emal etdi və yenidən qurdu:"
+    },
+    "en": {
+        "invariant-footer-text": "This site has been manipulated and reconstructed by"
+    },
+    "ru": {
+        "invariant-footer-text": "Обработал и переустановил этот сайт:"
+    },
+    "tr": {
+        "invariant-footer-text": "Bu site manipüle edildi ve yeniden inşa edildi:"
+    }
+} 

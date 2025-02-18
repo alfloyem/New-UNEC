@@ -33,8 +33,7 @@
       "sidebar-header-services": "Xidmətlər",
       "sidebar-header-student-help": "Tələbə dəstəyi",
       "sidebar-header-finance-and-programs": "Maliyyə və proqramlar",
-      "exit-account": "Hesabdan çıx",
-      "invariant-footer-text": "Bu veb saytı emal etdi və yenidən qurdu:"
+      "exit-account": "Hesabdan çıx"
     },
     "en": {
       "sidebar-academic-calendar": "Academic calendar",
@@ -70,8 +69,7 @@
       "sidebar-header-services": "Services",
       "sidebar-header-student-help": "Student support",
       "sidebar-header-finance-and-programs": "Finance and programs",
-      "exit-account": "Exit account",
-      "invariant-footer-text": "This site has been manipulated and reconstructed by"
+      "exit-account": "Exit account"
     },
     "ru": {
       "sidebar-academic-calendar": "Академический календарь",
@@ -107,8 +105,7 @@
       "sidebar-header-services": "Услуги",
       "sidebar-header-student-help": "Поддержка студентов",
       "sidebar-header-finance-and-programs": "Финансы и программы",
-      "exit-account": "Выйти из учетной записи",
-      "invariant-footer-text": "Обработал и переустановил этот сайт:"
+      "exit-account": "Выйти из учетной записи"
     },
     "tr": {
       "sidebar-academic-calendar": "Akademik takvim",
@@ -144,7 +141,6 @@
       "sidebar-header-services": "Hizmetler",
       "sidebar-header-student-help": "Öğrenci desteği",
       "sidebar-header-finance-and-programs": "Finans ve programlar",
-      "exit-account": "Hesaptan çık",
-      "invariant-footer-text": "Bu site manipüle edildi ve yeniden inşa edildi:"
+      "exit-account": "Hesaptan çık"
     }
 } 
