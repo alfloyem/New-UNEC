@@ -74,9 +74,6 @@ aside{
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      
     }
 
     #exit-account-button:hover,
@@ -101,6 +98,8 @@ aside{
     .category-dropdown-button span {
       text-align: left;
       flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .category-dropdown-button svg {
