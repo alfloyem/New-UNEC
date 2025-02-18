@@ -142,10 +142,12 @@ aside{
       rotate: 180deg;
     }
 
+    .sub-menu div div:first-child,
     .sub-menu div a:first-child {
       margin-top: 10px;
     }
 
+    .sub-menu div div:hover,
     .sub-menu div a:hover {
       background: var(--color-background-hover);
     }
@@ -162,6 +164,7 @@ aside{
       align-items: end;
     }
 
+    .sub-menu div div,
     .sub-menu div a{
       width: 80%;
       position: relative;
@@ -171,6 +174,7 @@ aside{
       color: var(--color-text-secondary);
     }
 
+    .sub-menu div div span,
     .sub-menu div a span{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -248,6 +252,7 @@ aside{
     .sub-menu {
     transition: none;
     }
+    .sub-menu div div:first-child,
     .sub-menu div a:first-child {
       margin-top: 30px;
     }
@@ -284,6 +289,7 @@ aside{
       border: 1px solid var(--color-border-default);
     }
     .sub-menu div,
+    .sub-menu div div,
     .sub-menu div a {
       width: 100%;
     }
