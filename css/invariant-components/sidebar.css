@@ -19,7 +19,7 @@ aside{
 }
 
 /* Sidebar Open */
-#sidebar{
+body > aside{
   ::-webkit-scrollbar {
     width: 0px;
   }
@@ -110,7 +110,7 @@ aside{
 
 
     /* Sidebar Open - Main - Sub Headers */
-    #sidebar .sub-menu{
+    body > aside .sub-menu{
       display: grid;
       grid-template-rows: 0fr;
       transition: 300ms ease-in-out;
@@ -134,7 +134,7 @@ aside{
       border-color: transparent !important;
     }
 
-    #sidebar .sub-menu.show{
+    body > aside .sub-menu.show{
       grid-template-rows: 1fr;
     }
 
@@ -224,7 +224,11 @@ aside{
     }
 
 /* Sidebar Close*/
-#sidebar.close{
+body.close-sidebar {
+  grid-template-columns: 92px 1fr;
+}
+
+body.close-sidebar > aside{
   width: 92px;
 
   #exit-account-button span,
@@ -247,7 +251,7 @@ aside{
 
 /* Sidebar Close - Hover */
 
-#sidebar.close{
+body.close-sidebar > aside{
 
     .sub-menu {
     transition: none;
@@ -295,15 +299,19 @@ aside{
     }
 }
 
-@media screen and (max-width: 768px) {
-  #sidebar.close{
+@media(max-width: 768px) {
+  body.close-sidebar{
+    grid-template-columns: 0px 1fr;
+  }
+
+  body.close-sidebar > aside{
     width: 0px;
     padding: var(--rem-6) 0px;
     border: none;
     overflow: hidden;
   }
 
-  #sidebar.close  .overlay {
+  body.close-sidebar > aside .overlay {
     width: 0px;
     transition: all 300ms ease-in-out, width 0.3s cubic-bezier(1,0,1,0);
     left: 0px;

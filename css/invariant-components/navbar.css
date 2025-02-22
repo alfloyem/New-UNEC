@@ -29,24 +29,3 @@ nav{
     outline: 4px solid var(--color-state-focus);
   }
 
-body{
-    display: grid;
-    grid-template-columns: 282px 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-    "navbar navbar"
-    "sidebar main"
-    "sidebar footer";
-    transition: 300ms ease-in-out;
-    font-family: var(--fontfamily)
-}
-
-main{
-    grid-area: main;
-}
-
-@media(max-width:768px){
-    body{
-        grid-template-columns: 0px 1fr;
-    }
-}
