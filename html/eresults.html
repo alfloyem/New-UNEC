@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Azərbaycan Dövlət Iqtisad Universiteti ( Unec ) Tələbənin Şəxsi Kanineti">
     <title>Tələbənin şəxsi kabineti</title>
-    <!-- <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/eresults.css">
-    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/variables/root.css"> -->
-    <!-- <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/invariant-components/sidebar.css"> -->
-    <link rel="stylesheet" href="../css/invariant-components/sidebar.css">
+    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/eresults.css">
+    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/variables/root.css">
+    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/invariant-components/sidebar.css">
+    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/invariant-components/navbar.css">
+    <!-- <link rel="stylesheet" href="../css/invariant-components/sidebar.css">
+    <link rel="stylesheet" href="../css/invariant-components/navbar.css">
     <link rel="stylesheet" href="../css/eresults.css">
-    <link rel="stylesheet" href="../css/variables/root.css">
+    <link rel="stylesheet" href="../css/variables/root.css"> -->
 </head>
 <body class="close-sidebar">
 
@@ -305,181 +307,6 @@
     </div>
   </main>
 
-  <footer>ssss</footer>
-
-
-  <script>document.addEventListener('DOMContentLoaded', () => {
-    const examData = [
-  { no: 1, subject: "A1 Yabancı dilde iş və akademik iletişim", examType: "Yekun imtahan 2", examFormat: "Yazılı imtahan", date: "31 / 01 / 2025", entranceScore: 41, examScore: 17, result: "84 B (Çox yaxşı)" },
-  { no: 2, subject: "Azerbaycan Tarihi", examType: "Yekun imtahan", examFormat: "Elektron imtahan", date: "30 / 01 / 2025", entranceScore: 30, examScore: 32, result: "62 D (Kafi)" },
-  { no: 3, subject: "BIT-Temel Bilgisayar Becerileri", examType: "Ara İmtahan 1", examFormat: "Elektron imtahan", date: "29 / 11 / 2024", entranceScore: 0, examScore: 27, result: "" },
-  { no: 4, subject: "Azerbaycan Tarihi", examType: "Ara İmtahan 1", examFormat: "Elektron imtahan", date: "29 / 10 / 2024", entranceScore: 0, examScore: 10, result: "" },
-  { no: 5, subject: "Liner Cebir ve Matematiksel Analiz", examType: "Ara İmtahan 1", examFormat: "Elektron imtahan", date: "28 / 11 / 2024", entranceScore: 0, examScore: 21, result: "" },
-  { no: 6, subject: "A1 Yabancı dilde iş və akademik iletişim", examType: "Yekun imtahan 3", examFormat: "Yazılı imtahan", date: "28 / 01 / 2025", entranceScore: 41, examScore: 17, result: "84 B (Çox yaxşı)" },
-  { no: 7, subject: "A1 Yabancı dilde iş və akademik iletişim", examType: "Ara İmtahan 2", examFormat: "Yazılı imtahan", date: "27 / 11 / 2024", entranceScore: 0, examScore: 20, result: "" },
-  { no: 8, subject: "Kariyer Planlama", examType: "Ara İmtahan 1", examFormat: "Elektron imtahan", date: "27 / 11 / 2024", entranceScore: 0, examScore: 19, result: "" },
-  { no: 9, subject: "A1 Yabancı dilde iş və akademik iletişim", examType: "Yekun imtahan 1", examFormat: "Elektron imtahan", date: "24 / 01 / 2025", entranceScore: 41, examScore: 9, result: "84 B (Çox yaxşı)" },
-  { no: 10, subject: "Kariyer Planlama", examType: "Yekun imtahan", examFormat: "Elektron imtahan", date: "16 / 01 / 2025", entranceScore: 39, examScore: 40, result: "79 C (Yaxşı)" },
-  { no: 11, subject: "BIT-Temel Bilgisayar Becerileri", examType: "Yekun imtahan", examFormat: "Elektron imtahan", date: "13 / 01 / 2025", entranceScore: 47, examScore: 39, result: "86 B (Çox yaxşı)" },
-  { no: 12, subject: "Liner Cebir ve Matematiksel Analiz", examType: "Yekun imtahan", examFormat: "Elektron imtahan", date: "07 / 01 / 2025", entranceScore: 41, examScore: 39, result: "80 C (Yaxşı)" },
-  { no: 13, subject: "A1 Yabancı dilde iş və akademik iletişim", examType: "Ara İmtahan 1", examFormat: "Elektron imtahan", date: "01 / 11 / 2024", entranceScore: 0, examScore: 14, result: "" }
-
-  ]
-  ;
-
-    let sortDirections = {};
-
-    function populateCustomDropdown(filterName, defaultText) {
-        const dropdown = document.querySelector(`.custom-dropdown[data-filter="${filterName}"]`);
-        const menu = dropdown.querySelector('.dropdown-menu');
-        const optionSet = new Set(["All"]);
-        examData.forEach(item => optionSet.add(item[filterName]));
-        menu.innerHTML = "";
-        optionSet.forEach(option => {
-            const div = document.createElement('div');
-            div.textContent = option === "All" ? defaultText : option;
-            div.dataset.value = option === "All" ? "all" : option;
-            menu.appendChild(div);
-        });
-    }
-
-    populateCustomDropdown("subject", "Bütün fənlər");
-    populateCustomDropdown("examType", "İmtahan Növü");
-    populateCustomDropdown("examFormat", "Keçirilmə Forması");
-
-    document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
-        const selected = dropdown.querySelector('.selected');
-        const menu = dropdown.querySelector('.dropdown-menu');
-        const svg = dropdown.querySelector('svg');
-
-        dropdown.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const isActive = dropdown.classList.contains('dropdown-active');
-            if (isActive) {
-                dropdown.classList.remove('dropdown-active');
-                svg.classList.remove('rotate');
-            } else {
-                closeAllDropdowns();
-                dropdown.classList.add('dropdown-active');
-                svg.classList.add('rotate');
-            }
-        });
-
-        menu.addEventListener('click', (e) => {
-            if (e.target.tagName === 'DIV') {
-                selected.textContent = e.target.textContent;
-                dropdown.classList.remove('dropdown-active');
-                svg.classList.remove('rotate');
-                applyExamFilters();
-            }
-        });
-    });
-
-    function closeAllDropdowns() {
-        document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
-            dropdown.classList.remove('dropdown-active');
-            const svg = dropdown.querySelector('svg');
-            svg && svg.classList.remove('rotate');
-        });
-    }
-
-    document.addEventListener('click', closeAllDropdowns);
-
-    function applyExamFilters() {
-        const subjectVal = document.querySelector('.custom-dropdown[data-filter="subject"] .selected').textContent;
-        const examTypeVal = document.querySelector('.custom-dropdown[data-filter="examType"] .selected').textContent;
-        const examFormatVal = document.querySelector('.custom-dropdown[data-filter="examFormat"] .selected').textContent;
-        const filteredData = examData.filter(item => {
-            return (subjectVal === "Bütün fənlər" || item.subject === subjectVal) &&
-                    (examTypeVal === "İmtahan Növü" || item.examType === examTypeVal) &&
-                    (examFormatVal === "Keçirilmə Forması" || item.examFormat === examFormatVal);
-        });
-        renderExamTable(filteredData);
-    }
-
-    function renderExamTable(dataArray) {
-        const examTableBody = document.getElementById('examTableBody');
-        examTableBody.innerHTML = "";
-        dataArray.forEach(item => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td data-label="No">${item.no}</td>
-                <td data-label="Fənn">${item.subject}</td>
-                <td data-label="İmtahan Növü">${item.examType}</td>
-                <td data-label="Keçirilmə Forması">${item.examFormat}</td>
-                <td data-label="Tarix">${item.date}</td>
-                <td data-label="Giriş Balı">${item.entranceScore}</td>
-                <td data-label="İmtahan Balı">${item.examScore}</td>
-                <td data-label="Nəticə">${item.result}</td>
-            `;
-            examTableBody.appendChild(tr);
-        });
-    }
-
-    document.getElementById('reset-filter').addEventListener('click', () => {
-        document.querySelector('.custom-dropdown[data-filter="subject"] .selected').textContent = "Bütün fənlər";
-        document.querySelector('.custom-dropdown[data-filter="examType"] .selected').textContent = "İmtahan Növü";
-        document.querySelector('.custom-dropdown[data-filter="examFormat"] .selected').textContent = "Keçirilmə Forması";
-        renderExamTable(examData);
-    });
-
-    function parseExamDate(dateStr) {
-        const parts = dateStr.split(" / ");
-        return new Date(parts[2], parts[1] - 1, parts[0]);
-    }
-
-    document.querySelectorAll('#examTable th').forEach((header, index) => {
-        header.addEventListener('click', () => {
-            const type = header.getAttribute('data-type');
-            sortDirections[index] = !sortDirections[index];
-            const isAsc = sortDirections[index];
-            const rows = Array.from(document.querySelectorAll('#examTableBody tr'));
-
-            rows.sort((a, b) => {
-                const aText = a.children[index].innerText.trim();
-                const bText = b.children[index].innerText.trim();
-
-                if (type === 'number') {
-                    return isAsc ? aText - bText : bText - aText;
-                } else if (type === 'date') {
-                    return isAsc ? parseExamDate(aText) - parseExamDate(bText) : parseExamDate(bText) - parseExamDate(aText);
-                } else {
-                    return isAsc ? aText.localeCompare(bText, 'az') : bText.localeCompare(aText, 'az');
-                }
-            });
-
-            const examTableBody = document.getElementById('examTableBody');
-            rows.forEach(row => examTableBody.appendChild(row));
-
-            document.querySelectorAll('#examTable th').forEach(th => {
-                th.textContent = th.textContent.replace(' ↑', '').replace(' ↓', '');
-            });
-
-            header.textContent += isAsc ? ' ↑' : ' ↓';
-        });
-    });
-
-    function initFilterToggle() {
-        const mainElement = document.querySelector('main');
-        const openFilters = document.getElementById('open-filters');
-        const closeFilters = document.getElementById('close-filters');
-
-        if (openFilters) {
-            openFilters.addEventListener('click', () => {
-                mainElement.classList.add('filter-active');
-            });
-        }
-
-        if (closeFilters) {
-            closeFilters.addEventListener('click', () => {
-                mainElement.classList.remove('filter-active');
-            });
-        }
-    }
-
-    initFilterToggle();
-    renderExamTable(examData);
-  });
-  </script>
+  <footer></footer>
 </body>
 </html>

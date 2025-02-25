@@ -1,3 +1,26 @@
+body {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main"
+    "sidebar footer";
+    transition: 0.3s ease-in-out;
+    font-family: var(--fontfamily);
+    background: var(--color-background-secondary);
+  }
+
+  main {
+    grid-area: main;
+    padding: var(--min-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--clamp-6);
+    background: var(--color-background-secondary);
+    position: relative;
+  }
+
 nav{
     position: sticky;
     grid-area: navbar;
