@@ -11,15 +11,15 @@ body {
     background: var(--color-background-secondary);
   }
 
-  main {
-    grid-area: main;
-    padding: var(--min-6);
-    display: flex;
-    flex-direction: column;
-    gap: var(--clamp-6);
-    background: var(--color-background-secondary);
-    position: relative;
-  }
+main {
+  grid-area: main;
+  padding: var(--min-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--clamp-6);
+  background: var(--color-background-secondary);
+  position: relative;
+}
 
 nav{
     position: sticky;
@@ -30,6 +30,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     background: var(--color-background);
-    padding: var(--clamp-4);
+    padding: var(--min-6);
     z-index: 500;
   }
