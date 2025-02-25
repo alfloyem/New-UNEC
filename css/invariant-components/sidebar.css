@@ -2,7 +2,7 @@ aside{
   position: sticky;
   grid-area: sidebar;
   top: 70px;
-  height: 100dvh;
+  height: calc(100dvh - 70px);
   z-index: 500;
 }
 
