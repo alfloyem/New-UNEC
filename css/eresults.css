@@ -234,7 +234,6 @@
     transition: 0.3s ease-in-out;
     cursor: default;
   }
-  th:nth-child(2),
   td:nth-child(2){
     padding-left: var(--clamp-2);
     text-align: left;
@@ -281,5 +280,8 @@
       font-weight: bold;
       margin-right: var(--clamp-3);
       text-align: start;
+    }
+    td:nth-child(2){
+      text-align: end;
     }
   }
