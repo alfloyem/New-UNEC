@@ -48,14 +48,14 @@ body {
     z-index: 1;
 }
 
-body.dark .logo-dark,
 .logo-light {
     display: block;
 }
 
-body.dark .logo-light,
 .logo-dark {
     display: none;
+
+    
 }
 
 /* Right Side */

@@ -1,9 +1,9 @@
-@import url(https://alfloyem.github.io/New-UNEC/css/variables/typography.css);
+/* @import url(https://alfloyem.github.io/New-UNEC/css/variables/typography.css);
 @import url(https://alfloyem.github.io/New-UNEC/css/variables/spacing.css);
-@import url(https://alfloyem.github.io/New-UNEC/css/variables/palatte.css);
-/* @import url(../variables/typography.css);
+@import url(https://alfloyem.github.io/New-UNEC/css/variables/palatte.css); */
+@import url(../variables/typography.css);
 @import url(../variables/spacing.css);
-@import url(../variables/palatte.css); */
+@import url(../variables/palatte.css);
 
 * {
     margin: 0;
@@ -25,4 +25,11 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
 }

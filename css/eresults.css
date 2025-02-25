@@ -1,62 +1,343 @@
-body{
+body {
     display: grid;
     grid-template-columns: 282px 1fr;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-    "navbar navbar"
+    grid-template-areas: 
+    "sidebar navbar"
     "sidebar main"
     "sidebar footer";
-    transition: 300ms ease-in-out;
+    transition: 0.3s ease-in-out;
     font-family: var(--fontfamily);
-}
+    background: var(--color-background-secondary);
+  }
 
-main{
+  main {
     grid-area: main;
-    padding: var(--min-7);
+    padding: var(--min-6);
     display: flex;
     flex-direction: column;
     gap: var(--clamp-6);
     background: var(--color-background-secondary);
-    color: var(--color-text-primary);
-}
+    position: relative;
+  }
 
 
-/* Filter Section */
-.filter {
+
+  /* Header Section */
+  header{
     display: flex;
-    gap: var(--rem-min-2);
+    align-items: center;
+
+    svg{
+        fill: var(--color-icon-primary);
+        width: var(--clamp-6);
+        height: max-content;
+    }
+    div{
+        display: none;
+        align-items: center;
+        padding: var(--clamp-3);
+        transition: 0.3s ease-in-out;
+        border-radius: var(--clamp-2);
+        cursor: pointer;
+    }
+    div:hover{
+        svg{
+        fill: var(--color-text-primary);
+        }
+        background: var(--color-background);
+    }
+  }
+
+  h4 {
+    flex-grow: 1;
+    color: var(--color-text-primary);
+  }
+  
+  /*  Filter Section  */
+  .filter {
+    display: flex;
     border-radius: var(--clamp-4);
     background: var(--color-background);
     width: fit-content;
-    padding: 0 var(--min-4);
-}
+    padding: var(--clamp-4);
+    gap: var(--clamp-4);
+  }
 
-.filter > div {
+  .filter > div {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: var(--rem-min-2);
-    padding: var(--min-6);
-    font-size: var(--rem-alternativ-3);
-}
+    gap: var(--clamp-3);
+    padding: var(--clamp-2);
+    border-radius: var(--rem-2);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    font-size: var(--clamp-4);
+  }
 
-.filter > div svg {
+  .filter > div svg {
+    fill: var(--color-icon-secondary);
+    transition: 0.5s ease;
+    width: var(--clamp-4);
+  }
+
+  .filter > div:hover:first-child,
+  .filter > div svg {
+    background: none;
     fill: var(--color-icon-primary);
-    width: 24px;
-}
+    cursor: inherit;
+  }
 
-#reset-filter {
+  #close-filters{
+    display: none;
+    align-items: center;
+    svg{
+        fill: var(--color-icon-secondary);
+    }
+    padding: 0 var(--clamp-2);
+    border-radius: var(--clamp-2);
+    cursor: pointer;
+    margin-right: -6px;
+  }
+
+  #close-filters:hover{
+    svg{
+        fill: var(--color-icon-primary);
+    }
+    background: var(--color-background-secondary);
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  /* Custom Dropdown Temel Stili */
+
+  .selected {
+    color: var(--color-text-primary);
+    user-select: none;
+    transition: 0.3s ease-in-out;
+    flex-grow: 1;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background: var(--color-background);
+    padding: var(--clamp-2);
+    border-radius: var(--clamp-2);
+    z-index: 100;
+    width: fit-content;
+    filter: drop-shadow(0 13px 61px var(--color-overlay));
+    border: 0.1px solid var(--color-border-secondary);
+  }
+
+  .custom-dropdown.dropdown-active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu div {
+    padding: var(--clamp-2);
+    font-size: var(--clamp-4);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    white-space: nowrap;
+    border-radius: var(--clamp-2);
+  }
+  .custom-dropdown .dropdown-menu div:hover {
+    background: var(--color-background-hover);
+  }
+  
+  /* Hover etkisi tüm filtre elemanlarında */
+  .filter > div:hover {
+    background: var(--color-background-hover);
+  }
+  
+  .custom-dropdown:hover .selected {
+    color: var(--color-text-primary);
+  }
+  
+  /* Reset butonu */
+  #reset-filter span {
+    background: none;
     color: var(--color-error);
-    svg {
+  }
+  #reset-filter svg {
+    stroke: var(--color-error);
     fill: none;
-    stroke: var(--color-error);}
+  }
+  #reset-filter:hover {
+    background: var(--color-error-hover);
+  }
+  
+
+  @media(max-width:768px) {
+    header div{
+        display: flex;
+    }
+
+    .filter-active::after,
+    main.filter-active .filter{
+        display: flex;
+    }
+
+    main .filter {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        flex-direction: column;
+        flex-grow: 1;
+        z-index: 1;
+        min-width: 60%;
+    }
+    main:after{
+        display: none;
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--color-overlay);
+    }
+    .filter > div:first-child {
+        gap: var(--clamp-4);
+        margin-bottom: var(--clamp-4);
+    }
+    #close-filters{
+        display: flex;
+    }
+    .dropdown-menu div {
+        padding: var(--clamp-3) !important;
+        font-size: var(--clamp-5) !important;
+    }
+    .filter > div {
+        gap: var(--clamp-8);
+        padding: var(--clamp-4);
+        flex-grow: 1;
+        font-size: var(--clamp-6);
+    }
+    .filter > div span {
+        flex-grow: 1;
+    }
+    .filter > div svg {
+        width: var(--clamp-6);
+    }
+    main {
+        padding: 0;
+    }
 }
 
-
-/* Table section */
-table {
-    gap: var(--min-2);
+  
+  /*  Table Section  */
+  table {
     border-radius: var(--clamp-4);
     background: var(--color-background);
-    padding: 0 var(--min-4);
-}
+    padding: var(--clamp-2);
+    font-size: var(--clamp-4);
+    width: 100%;
+  }
+  th {
+    color: var(--color-text-primary);
+    cursor: pointer;
+    padding: var(--clamp-2);
+    transition: 0.3s ease-in-out;
+    border-radius: var(--clamp-2);
+    flex-grow: 1;
+  }
+  td {
+    text-align: center;
+    color: var(--color-text-secondary);
+    padding: var(--clamp-4) var(--clamp-2);
+    transition: 0.3s ease-in-out;
+    cursor: default;
+  }
+  th:nth-child(2),
+  td:nth-child(2){
+    padding-left: var(--clamp-2);
+    text-align: left;
+  }
+  td:hover {
+    color: var(--color-text-primary);
+  }
+  th:hover {
+    background-color: var(--color-background-hover);
+  }
+  
+  /*  Responsive Tablo - Mobil Kart Tasarımı  */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead {
+      display: none;
+    }
+    tr {
+      border: 1px solid var(--color-border, #ddd);
+      border-radius: var(--clamp-4);
+      margin-bottom: var(--clamp-4);
+      background: var(--color-background);
+      padding: var(--clamp-4);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    td {
+      display: flex;
+      justify-content: space-between;
+      padding: var(--clamp-3) 0;
+      border: none;
+    }
+    td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      margin-right: var(--clamp-3);
+    }
+  }
+  
+  /*  Pagination  */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pagination div{
+    display: flex;
+    align-items: center;
+    gap: var(--clamp-2);
+    color: var(--color-text-secondary);
+    font-size: var(--clamp-4);
+    background: var(--color-background);
+    border-radius: var(--clamp-4);
+    padding: var(--clamp-4);
+    font-weight: var(--medium);
+    svg {
+        fill: var(--color-icon-secondary);
+        width: var(--clamp-3);
+        height: auto;
+        transition: 0.3s ease-in-out;
+    }
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .pagination div:hover{
+    color: var(--color-text-primary);
+    background: var(--color-background-hover);
+    svg {
+        fill: var(--color-icon-primary);
+    }
+  }
+
+  .pagination div svg:first-child{
+    transform: rotate(90deg);
+  }
+
+  .pagination div svg:last-child{
+    transform: rotate(-90deg);
+  }

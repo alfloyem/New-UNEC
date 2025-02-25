@@ -11,7 +11,7 @@
     --color-secondary-focus: #15243d;
   
     --color-error: #EF4444;
-    --color-error-hover: #d83a3a;
+    --color-error-hover: #fcc;
     --color-error-active: #c23030;
     --color-error-focus: #e64545;
   
@@ -60,7 +60,7 @@
   
     /* STATE COLORS */
     --color-state-hover: rgba(44, 65, 92, 0.85);
-    --color-state-hover-secondary: #292929;
+    --color-state-hover-secondary: rgb(227, 227, 227);
     --color-state-active: rgba(203, 213, 225, 0.10); 
     --color-state-focus: rgba(191, 219, 254, 0.75); 
     --color-state-disabled: rgba(30, 41, 59, 0.38);
@@ -70,6 +70,7 @@
   
     /* BORDER COLORS */
     --color-border-default: #E2E8F0;
+    --color-border-secondary: #e1e1e15d;
     --color-border-hover: #CBD5E1;
     --color-border-active: #94A3B8;
     --color-divider: #E2E8F0;
@@ -157,6 +158,7 @@
     
         /* BORDER COLORS */
         --color-border-default: #333333;
+        --color-border-secondary: #3333335d;
         --color-border-hover: #444444;
         --color-border-active: #555555;
         --color-divider: #444444;
