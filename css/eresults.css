@@ -273,11 +273,13 @@
       justify-content: space-between;
       padding: var(--clamp-2);
       border: none;
+      text-align: end;
     }
     td::before {
       color: var(--color-text-primary);
       content: attr(data-label);
       font-weight: bold;
       margin-right: var(--clamp-3);
+      text-align: start;
     }
   }
