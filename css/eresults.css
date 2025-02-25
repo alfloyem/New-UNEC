@@ -251,24 +251,31 @@
     table, thead, tbody, th, td, tr {
       display: block;
     }
+    table{
+      background: none;
+      padding: 0;
+    }
+    h4{
+      font-size: calc(var(--clamp-7) - 3px);
+      margin-left: 5px;
+    }
     thead {
       display: none;
     }
     tr {
-      border: 1px solid var(--color-border, #ddd);
       border-radius: var(--clamp-4);
       margin-bottom: var(--clamp-4);
       background: var(--color-background);
       padding: var(--clamp-4);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     td {
       display: flex;
       justify-content: space-between;
-      padding: var(--clamp-3) 0;
+      padding: var(--clamp-2);
       border: none;
     }
     td::before {
+      color: var(--color-text-primary);
       content: attr(data-label);
       font-weight: bold;
       margin-right: var(--clamp-3);
