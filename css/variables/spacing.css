@@ -68,18 +68,18 @@
     --vh-12: 34.56vh;  /* 256px */
   
     /* Clamp Values */
-    --clamp-1: clamp(var(--rem-1) * 0.6, var(--vw-1), var(--rem-1) * 2);
-    --clamp-2: clamp(var(--rem-2) * 0.6, var(--vw-2), var(--rem-2) * 2);
-    --clamp-3: clamp(var(--rem-3) * 0.6, var(--vw-3), var(--rem-3) * 2);
-    --clamp-4: clamp(var(--rem-4) * 0.6, var(--vw-4), var(--rem-4) * 2);
-    --clamp-5: clamp(var(--rem-5) * 0.6, var(--vw-5), var(--rem-5) * 2);
-    --clamp-6: clamp(var(--rem-6) * 0.6, var(--vw-6), var(--rem-6) * 2);
-    --clamp-7: clamp(var(--rem-7) * 0.6, var(--vw-7), var(--rem-7) * 2);
-    --clamp-8: clamp(var(--rem-8) * 0.6, var(--vw-8), var(--rem-8) * 2);
-    --clamp-9: clamp(var(--rem-9) * 0.6, var(--vw-9), var(--rem-9) * 2);
-    --clamp-10: clamp(var(--rem-10) * 0.6, var(--vw-10), var(--rem-10) * 2);
-    --clamp-11: clamp(var(--rem-11) * 0.6, var(--vw-11), var(--rem-11) * 2);
-    --clamp-12: clamp(var(--rem-12) * 0.6, var(--vw-12), var(--rem-12) * 2);
+    --clamp-1: clamp(var(--rem-1) * 0.75, var(--vw-1), var(--rem-1) * 2);
+    --clamp-2: clamp(var(--rem-2) * 0.75, var(--vw-2), var(--rem-2) * 2);
+    --clamp-3: clamp(var(--rem-3) * 0.75, var(--vw-3), var(--rem-3) * 2);
+    --clamp-4: clamp(var(--rem-4) * 0.75, var(--vw-4), var(--rem-4) * 2);
+    --clamp-5: clamp(var(--rem-5) * 0.75, var(--vw-5), var(--rem-5) * 2);
+    --clamp-6: clamp(var(--rem-6) * 0.75, var(--vw-6), var(--rem-6) * 2);
+    --clamp-7: clamp(var(--rem-7) * 0.75, var(--vw-7), var(--rem-7) * 2);
+    --clamp-8: clamp(var(--rem-8) * 0.75, var(--vw-8), var(--rem-8) * 2);
+    --clamp-9: clamp(var(--rem-9) * 0.75, var(--vw-9), var(--rem-9) * 2);
+    --clamp-10: clamp(var(--rem-10) * 0.75, var(--vw-10), var(--rem-10) * 2);
+    --clamp-11: clamp(var(--rem-11) * 0.75, var(--vw-11), var(--rem-11) * 2);
+    --clamp-12: clamp(var(--rem-12) * 0.75, var(--vw-12), var(--rem-12) * 2);
 
     --min-1: min(0.25em, 8%);
     --min-2: min(0.5em, 8%);
