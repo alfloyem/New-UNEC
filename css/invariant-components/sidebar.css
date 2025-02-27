@@ -335,21 +335,3 @@ body.close-sidebar > aside{
   opacity: 100;
 }
 }
-
-#sidebar-toggle-button {
-  background: transparent;
-  border-radius: var(--rem-2);
-  color: var(--color-icon-primary);
-  transition: 0.3s ease-in-out;
-  padding: var(--rem-3);
-}
-
-#sidebar-toggle-button:hover {
-  background: var(--color-background-hover);
-  color: var(--color-icon-primary-hover);
-}
-
-#sidebar-toggle-button:focus-visible {
-  outline: 4px solid var(--color-state-focus);
-}
-
