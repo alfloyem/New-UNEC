@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Azərbaycan Dövlət Iqtisad Universiteti ( Unec ) Tələbənin Şəxsi Kanineti">
     <title>Tələbənin şəxsi kabineti</title>
-    <!-- <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/eresults.css">
-    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/variables/root.css">
-    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/invariant-components/sidebar.css">
-    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/invariant-components/navbar.css"> -->
     <link rel="stylesheet" href="../css/invariant-components/sidebar.css">
     <link rel="stylesheet" href="../css/invariant-components/navbar.css">
-    <link rel="stylesheet" href="../css/eresults.css">
     <link rel="stylesheet" href="../css/variables/root.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="close-sidebar">
 
@@ -270,70 +266,6 @@
 </nav>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script>
-    // Get DOM elements
-    const notificationToggle = document.getElementById('notification-toggle');
-    const notificationMenu = document.getElementById('notification-menu');
-    const profileToggle = document.getElementById('profile-toggle');
-    const profileMenu = document.getElementById('profile-menu');
-    const menuOverlay = document.getElementById('menu-overlay');
-    const sidebarToggle = document.querySelector('.sidebar-toggle');
-    const languageOptions = document.querySelectorAll('.language-section .option-item');
-    const themeOptions = document.querySelectorAll('.theme-section .option-item');
-
-    // Toggle notification dropdown
-    notificationToggle.addEventListener('click', () => {
-        notificationMenu.classList.toggle('navbar-active');
-        
-        if (profileMenu.classList.contains('navbar-active')) {
-            profileMenu.classList.remove('navbar-active');
-        }
-        
-        menuOverlay.classList.toggle('navbar-active');
-    });
-
-    // Toggle profile dropdown
-    profileToggle.addEventListener('click', () => {
-        profileMenu.classList.toggle('navbar-active');
-        
-        if (notificationMenu.classList.contains('navbar-active')) {
-            notificationMenu.classList.remove('navbar-active');
-        }
-        
-        menuOverlay.classList.toggle('navbar-active');
-    });
-
-    // Close dropdowns when clicking outside
-    menuOverlay.addEventListener('click', () => {
-        notificationMenu.classList.remove('navbar-active');
-        profileMenu.classList.remove('navbar-active');
-        menuOverlay.classList.remove('navbar-active');
-    });
-
-    // Sidebar toggle functionality (placeholder)
-    sidebarToggle.addEventListener('click', () => {
-        // Add sidebar toggle functionality here
-        alert('Sidebar toggle clicked! Implement your sidebar functionality.');
-    });
-
-    // Language options functionality
-    languageOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            languageOptions.forEach(opt => opt.classList.remove('navbar-active'));
-            option.classList.add('navbar-active');
-        });
-    });
-
-    // Theme options functionality
-    themeOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            themeOptions.forEach(opt => opt.classList.remove('navbar-active'));
-            option.classList.add('navbar-active');
-        });
-    });
-</script>
-
-
 
   <aside id="sidebar">
       <ul class="sidebar-container">
@@ -600,6 +532,7 @@
     </div>
   </main>
 
-  <footer><button id="reset-eresult-data-collected">reset</button></footer>
+  <footer></footer>
+  <script src="main.js" ></script>
 </body>
 </html>
