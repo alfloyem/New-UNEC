@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Azərbaycan Dövlət Iqtisad Universiteti ( Unec ) Tələbənin Şəxsi Kanineti">
     <title>Tələbənin şəxsi kabineti</title>
+    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/login.css">
+    <link rel="stylesheet" href="https://alfloyem.github.io/New-UNEC/css/variables/root.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/variables/root.css">
+    <!-- <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/variables/root.css"> -->
 </head>
 <body>
+    <!-- CONTENT DOWNLOADED -->
     <div class="container">
         <div class="side left">
             <?xml version="1.0" encoding="UTF-8"?>
@@ -124,16 +127,16 @@
                 <div class="form">
                     <div class="input-container">
                         <label id="mail-label" >E-poçt və ya istifadəçi adı</label>
-                        <input id="LoginForm_username" placeholder="mailadress@mail.com" type="text">
+                        <input id="LoginForm_username" placeholder="mailadress@mail.com" name="LoginForm[username]" type="text">
                     </div>
                     <div class="input-container">
                         <label id="password-label" >Şifrə</label>
                         <div class="password-input">
-                            <input id="LoginForm_password" placeholder="••••••••" type="password">
+                            <input id="LoginForm_password" placeholder="••••••••" name="LoginForm[password]" type="password">
                             <i class="material-icons show-password">visibility</i>
                         </div>
                     </div>
-                    <a id="password-recovery" class="password-recovery" href="/az/rpassword">Şifrəni unutmusunuz?</a>
+                    <a id="password-recovery" class="password-recovery" href="/az/rpassword" style="text-decoration: none;">Şifrəni unutmusunuz?</a>
                 </div>
                 <div class="button-container">
                     <button id="sign-in" class="sign-in" type="submit">Daxil Ol</button>
@@ -142,6 +145,5 @@
             </form>
         </div>
     </div>
-    <script src="main.js"></script>
 </body>
 </html>

@@ -106,7 +106,6 @@ body > aside{
       height: 16px;
       width: 16px;
       fill: var(--color-text-secondary);
-      transition: 0.3s ease-in-out;
     }
 
 
@@ -140,6 +139,10 @@ body > aside{
 
     body > aside .sub-menu.show{
       grid-template-rows: 1fr;
+    }
+
+    .rotate svg:last-child {
+      rotate: 180deg;
     }
 
     .sub-menu div div:first-child,
@@ -322,7 +325,7 @@ body.close-sidebar > aside{
   }
 
 .overlay{
-  top: 70px;
+  top: 0px;
   left: 282px;
   position: fixed;
   width: calc(100dvw);
