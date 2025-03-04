@@ -230,16 +230,13 @@
     padding: var(--clamp-4) var(--clamp-2);
     transition: 0.3s ease-in-out;
     cursor: default;
-    border-bottom: 1px solid var(--color-border-default);
   }
-  th:nth-child(2)
+  th:nth-child(2),
   td:nth-child(2){
     padding-left: var(--clamp-2);
-    text-align: initial;
+    text-align: left;
   }
-  td:last-child{
-    border-bottom: none;
-  }
+
   td:hover {
     color: var(--color-text-primary);
   }
@@ -276,6 +273,10 @@
       padding: var(--clamp-2);
       border: none;
       text-align: end;
+      border-bottom: 1px solid var(--color-border-default);
+    }
+    td:last-child{
+      border-bottom: none;
     }
     td::before {
       color: var(--color-text-primary);
